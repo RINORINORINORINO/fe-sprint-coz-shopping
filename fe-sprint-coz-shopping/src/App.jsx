@@ -2,9 +2,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Outlet, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Main from "./pages/Main";
-import ItemList from "./pages/ItemList";
-import BookmarkList from "./pages/BookmarkList";
+import Main from "./pages/MainPage";
+import ItemList from "./pages/ItemListPage";
+import BookmarkList from "./pages/BookmarkListPage";
 
 function App() {
   return (
