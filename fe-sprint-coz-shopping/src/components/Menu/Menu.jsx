@@ -7,7 +7,9 @@ import { AiOutlineStar } from "react-icons/ai";
 export default function Menu() {
   return (
     <div className={styles.menu}>
-      <div className={styles.linkbutton}>현석님 어서오세요!</div>
+      <Link to="/" className={styles.linkbutton}>
+        <div>현석님 어서오세요!</div>
+      </Link>
       <Link to="/item/list" className={styles.linkbutton}>
         <div>
           <SlPresent className={styles.icons} />

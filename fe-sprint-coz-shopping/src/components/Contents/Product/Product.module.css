@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  width: 264px;
+  height: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img {
+  border-radius: 5%;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  object-fit: cover; /* 이미지가 container에 잘 맞도록 조정 */
+}
+
+.container > div {
+  height: 20%; /* container의 높이의 1/5 */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  left: 0;
+}
+
+.discount {
+  color: #452cdd;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.price {
+  font-weight: 500;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
