@@ -12,6 +12,7 @@
   position: sticky; /* position 을 sticky로 설정하고 top, left를 각 0으로 주어야 딱 왼쪽 상단에 붙어있음 */
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .header img {

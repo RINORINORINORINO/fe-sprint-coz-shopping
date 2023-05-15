@@ -13,7 +13,7 @@
   box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
   -webkit-box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
   -moz-box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
-  z-index: 1; /* 다른 요소 위에 나타나게 */
+  z-index: 10; /* 다른 요소 위에 나타나게 */
 }
 
 .linkbutton {

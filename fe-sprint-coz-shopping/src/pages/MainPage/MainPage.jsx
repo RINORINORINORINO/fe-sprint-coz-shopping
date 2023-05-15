@@ -5,6 +5,7 @@ import Product from "../../components/Contents/Product/Product";
 import Exhibition from "../../components/Contents/Exhibition/Exhibition";
 import Category from "../../components/Contents/Category/Category";
 import Brand from "../../components/Contents/Brand/Brand";
+import styles from "./MainPage.module.css";
 
 export default function MainPage() {
   const dispatch = useDispatch();
@@ -23,9 +24,16 @@ export default function MainPage() {
   const brand = cozData.find((item) => item.type === "Brand");
 
   return (
-    <div>
-      <div>상품 리스트</div>
-      <div>
+    <div className={styles.wrap}>
+      <div className={styles.title}>상품 리스트</div>
+      <div className={styles.container}>
+        {product && <Product item={product} />}
+        {exhibition && <Exhibition item={exhibition} />}
+        {category && <Category item={category} />}
+        {brand && <Brand item={brand} />}
+      </div>
+      <div className={styles.title}>북마크 리스트</div>
+      <div className={styles.container}>
         {product && <Product item={product} />}
         {exhibition && <Exhibition item={exhibition} />}
         {category && <Category item={category} />}

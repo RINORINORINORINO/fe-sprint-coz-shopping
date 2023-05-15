@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 264px;
+  height: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img {
+  border-radius: 5%;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0;
+  object-fit: cover; /* 이미지가 container에 잘 맞도록 조정 */
+}
+
+.bookmarker {
+  position: absolute;
+  bottom: 63px;
+  right: 13px;
+  color: white;
+  font-size: 19px;
+}
+
+.title {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 81.82%;
+  bottom: 9.09%;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}

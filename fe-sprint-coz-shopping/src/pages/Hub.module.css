@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* sticky footer 전략 => 푸터를 페이지 하단에 고정하면서도 필요한 경우 스크롤하여 볼 수 있게 하는 방법
+flexbox에서의 예시는 위 코드 */
