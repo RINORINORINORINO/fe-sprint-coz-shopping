@@ -4,7 +4,8 @@
   align-items: center;
   background-color: #ffffff;
   padding: 20px;
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
   -webkit-box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
   -moz-box-shadow: 19px 19px 76px -6px rgba(65, 45, 212, 0.28);
@@ -41,4 +42,6 @@
   font-size: 24px;
   padding-bottom: 2px;
   color: rgb(27, 27, 27);
+  position: relative;
+  cursor: pointer;
 }
