@@ -1,17 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const bookmarkSlice = createSlice({
-  name: bookmark,
+  name: "bookmarks",
   initialState: [],
   reducers: {
-    addToBookmark: (state, action) => {
-      state.push(action.payload);
+    addBookmark: (state, action) => {
+      const index = state.findIndex((item) => item.id === action.payload.id);
+      if (index === -1) {
+        state.push(action.payload);
+      }
     },
-    removeToBookmark: (state, action) => {
-      return state.filter((el) => el.id !== action.payload);
+    removeBookmark: (state, action) => {
+      return state.filter((el) => el.id !== action.payload.id);
     },
   },
 });
 
-export const { addToBookmark, removeToBookmark } = bookmarkSlice.actions;
+export const { addBookmark, removeBookmark } = bookmarkSlice.actions;
 export default bookmarkSlice.reducer;
