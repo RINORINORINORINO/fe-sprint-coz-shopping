@@ -45,16 +45,16 @@ export default function MainPage() {
         {bookmarks.length === 0 ? (
           <>
             <div className={styles.emptyBookmark}>
-              <img src="../images/empty.jpg" />
+              <img className={styles.img} src="../images/empty.jpg" />
             </div>
             <div className={styles.emptyBookmark}>
-              <img src="../images/empty.jpg" />
+              <img className={styles.img} src="../images/empty.jpg" />
             </div>
             <div className={styles.emptyBookmark}>
-              <img src="../images/empty.jpg" />
+              <img className={styles.img} src="../images/empty.jpg" />
             </div>
             <div className={styles.emptyBookmark}>
-              <img src="../images/empty.jpg" />
+              <img className={styles.img} src="../images/empty.jpg" />
             </div>
           </>
         ) : (

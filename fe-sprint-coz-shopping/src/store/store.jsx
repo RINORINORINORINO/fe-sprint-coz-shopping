@@ -2,9 +2,10 @@ import { configureStore } from "@reduxjs/toolkit";
 import menuSlice from "./slices/menuSlice";
 import cozDataReducer from "./slices/fetchDataSlice";
 import bookmarksReducer from "./slices/bookmarkSlice";
+import modalReducer from "./slices/modalSlice";
 
 export const store = configureStore({
-  reducer: { menu: menuSlice, cozData: cozDataReducer, bookmarks: bookmarksReducer },
+  reducer: { menu: menuSlice, cozData: cozDataReducer, bookmarks: bookmarksReducer, modal: modalReducer },
 });
 
 //cozDataSlice와 cozDataReducer의 차이

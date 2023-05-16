@@ -30,7 +30,7 @@ export default function Header() {
     <header className={styles.header}>
       {/* //onClick={(e) => e.stopPropagation()}를 속성으로 넣어주면 header 컴포넌트를 눌렀을 때는 메뉴가 닫히지 않음 */}
       <div className={styles.logo}>
-        <Link to="/">
+        <Link to="/" className={styles.logoLink}>
           <img src="../images/Logo.png" />
           <span>COZ SHOP</span>
         </Link>

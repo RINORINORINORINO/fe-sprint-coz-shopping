@@ -7,7 +7,7 @@ const bookmarkSlice = createSlice({
     addBookmark: (state, action) => {
       const index = state.findIndex((item) => item.id === action.payload.id);
       if (index === -1) {
-        state.push(action.payload);
+        state.unshift(action.payload);
       }
     },
     removeBookmark: (state, action) => {
