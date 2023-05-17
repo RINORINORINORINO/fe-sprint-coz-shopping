@@ -4,7 +4,7 @@ import styles from "./Modal.module.css";
 import { closeModal } from "../../store/slices/modalSlice";
 import { BsStar } from "react-icons/bs";
 import { addBookmark, removeBookmark } from "../../store/slices/bookmarkSlice";
-import { fetchNewData, removeItem, restoreItem } from "../../store/slices/fetchDataSlice";
+import { removeItem, restoreItem } from "../../store/slices/fetchDataSlice";
 
 export default function Modal() {
   const dispatch = useDispatch();
@@ -18,7 +18,6 @@ export default function Modal() {
   const handleAddBookmark = (displayContent) => {
     dispatch(addBookmark(displayContent));
     dispatch(removeItem(displayContent));
-    dispatch(fetchNewData(displayContent.id));
   };
 
   const handleRemoveBookmark = (displayContent) => {

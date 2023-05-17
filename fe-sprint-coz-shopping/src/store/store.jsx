@@ -3,9 +3,16 @@ import menuSlice from "./slices/menuSlice";
 import cozDataReducer from "./slices/fetchDataSlice";
 import bookmarksReducer from "./slices/bookmarkSlice";
 import modalReducer from "./slices/modalSlice";
+import tabsReducer from "./slices/tabsSlice";
 
 export const store = configureStore({
-  reducer: { menu: menuSlice, cozData: cozDataReducer, bookmarks: bookmarksReducer, modal: modalReducer },
+  reducer: {
+    menu: menuSlice,
+    cozData: cozDataReducer,
+    bookmarks: bookmarksReducer,
+    modal: modalReducer,
+    tabs: tabsReducer,
+  },
 });
 
 //cozDataSlice와 cozDataReducer의 차이

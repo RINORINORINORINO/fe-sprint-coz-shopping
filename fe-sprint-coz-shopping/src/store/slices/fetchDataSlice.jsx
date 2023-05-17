@@ -6,10 +6,10 @@ export const fetchData = createAsyncThunk("cozData/fetchData", async () => {
   return data;
 });
 
-export const fetchNewData = createAsyncThunk("cozData/fetchNewData", async (id) => {
-  const { data } = await axios.get(`http://cozshopping.codestates-seb.link/api/v1/products/${id}`);
-  return data;
-});
+// export const fetchNewData = createAsyncThunk("cozData/fetchNewData", async (id) => {
+//   const { data } = await axios.get(`http://cozshopping.codestates-seb.link/api/v1/products/${id}`);
+//   return data;
+// });
 
 //createAsyncThunk => 리덕스 썽크를 생성하는 함수, 첫 번째 매개변수로 액션 타입 / 두 번째 매개변수로 비동기 작업을 수행하는 함수 >>> 주로 API를 받아올 때
 
@@ -46,6 +46,7 @@ export const cozDataSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.data = state.data.concat(action.payload);
+        state.data = state.allData.concat(action.payload);
       })
       .addCase(fetchData.rejected, (state, action) => {
         state.status = "failed";
